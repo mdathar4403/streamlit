@@ -6,12 +6,12 @@ Created on Wed Jun 19 15:11:07 2024
 """
 
 import numpy as np
-# import pickle
+import pickle
 import streamlit as st
 
 
 # loading the saved model
-loaded_model = (open('trained_model.sav', 'rb'))
+loaded_model = pickle.load(open('trained_model.sav', 'rb'))
 # with open('trained_model.sav', 'rb') as file:
     # loaded_model = pickle.load(file)
 #creating a function for Prediction
