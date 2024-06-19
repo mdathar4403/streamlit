@@ -7,13 +7,12 @@ Created on Wed Jun 19 15:11:07 2024
 
 import numpy as np
 import streamlit as st
-import joblib
+import pickle
 
 
 # loading the saved model
 filename = 'trained_model.sav'
-loaded_model = joblib.load(filename)
-# loaded_model = pickle.load(open(filename, 'rb'))
+loaded_model = pickle.load(open(filename, 'rb'))
 # with open('trained_model.sav', 'rb') as file:
     # loaded_model = pickle.load(file)
 #creating a function for Prediction
